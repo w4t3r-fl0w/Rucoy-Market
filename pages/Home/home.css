@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    background-color: rgb(56, 56, 56);
+}
+
+#navbar {
+    background-color: rgb(35, 35, 35);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.nav-button {
+    text-decoration: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    color: black;
+    background-color: aqua;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 3px;
+    transition: color 0.15s, background-color 0.15s;
+    
+}
+
+.nav-button:hover {
+    color: aqua;
+    background-color: black;
+}
+
+
+#CTA {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#CTA h1 {
+    color: white;
+}
+
+#CTA p {
+    color: white;
+    display: inline-block;
+    width: 600px;
+    font-size: 17px;
+}
+
