@@ -42,18 +42,24 @@ const delay = 10
 
 
 
-
+let Already_Played = false
 element.addEventListener('mousemove', (event) => {
   const rect = element.getBoundingClientRect();
   const distance = Math.sqrt(Math.pow(rect.left - event.clientX, 2) + Math.pow(rect.top - event.clientY, 2));
   if (distance < threshold) {
-    document.getElementById('you-almost-had-it').play();
     let left = getRandomInt(-200, 200)
     let top = getRandomInt(0, 465)
     document.getElementById("red-green-switcher").style.left = `${left}px`
     document.getElementById("red-green-switcher").style.top = `${top}px`
     console.log(`left: ${left}, top: ${top}`)
+
+    if (Already_Played == false) {
+        document.getElementById('you-almost-had-it').play();
+        Already_Played = true
+    }
+
   }
+
 });
 
 
